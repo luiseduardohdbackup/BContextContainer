@@ -17,7 +17,11 @@
 		5BE568591700FBEA00C2ACC1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE568581700FBEA00C2ACC1 /* Default@2x.png */; };
 		5BE5685B1700FBEA00C2ACC1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5685A1700FBEA00C2ACC1 /* Default-568h@2x.png */; };
 		5BE5685E1700FBEA00C2ACC1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5685C1700FBEA00C2ACC1 /* MainStoryboard.storyboard */; };
-		5BE568611700FBEA00C2ACC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE568601700FBEA00C2ACC1 /* ViewController.m */; };
+		5BE568691700FE0D00C2ACC1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE568681700FE0D00C2ACC1 /* MainViewController.m */; };
+		5BE5686D1700FF0300C2ACC1 /* BCXContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5686C1700FF0300C2ACC1 /* BCXContainerViewController.m */; };
+		5BE568711700FF7000C2ACC1 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BE5686F1700FF7000C2ACC1 /* PushedViewController.m */; };
+		5BE568721700FF7000C2ACC1 /* PushedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BE568701700FF7000C2ACC1 /* PushedViewController.xib */; };
+		C8C14F9D2A33497B8C8A9394 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AB075558C54C5E916F1A0D /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +39,15 @@
 		5BE568581700FBEA00C2ACC1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5BE5685A1700FBEA00C2ACC1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5BE5685D1700FBEA00C2ACC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5BE5685F1700FBEA00C2ACC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5BE568601700FBEA00C2ACC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5BE568671700FE0D00C2ACC1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		5BE568681700FE0D00C2ACC1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		5BE5686B1700FF0300C2ACC1 /* BCXContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCXContainerViewController.h; sourceTree = "<group>"; };
+		5BE5686C1700FF0300C2ACC1 /* BCXContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCXContainerViewController.m; sourceTree = "<group>"; };
+		5BE5686E1700FF7000C2ACC1 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PushedViewController.h; path = BContextContainer/PushedViewController.h; sourceTree = SOURCE_ROOT; };
+		5BE5686F1700FF7000C2ACC1 /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PushedViewController.m; path = BContextContainer/PushedViewController.m; sourceTree = SOURCE_ROOT; };
+		5BE568701700FF7000C2ACC1 /* PushedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PushedViewController.xib; path = BContextContainer/PushedViewController.xib; sourceTree = SOURCE_ROOT; };
+		8B9C280193444FF9A2935EFA /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		E7AB075558C54C5E916F1A0D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 				5BE568451700FBEA00C2ACC1 /* UIKit.framework in Frameworks */,
 				5BE568471700FBEA00C2ACC1 /* Foundation.framework in Frameworks */,
 				5BE568491700FBEA00C2ACC1 /* CoreGraphics.framework in Frameworks */,
+				C8C14F9D2A33497B8C8A9394 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,7 @@
 				5BE5684A1700FBEA00C2ACC1 /* BContextContainer */,
 				5BE568431700FBEA00C2ACC1 /* Frameworks */,
 				5BE568421700FBEA00C2ACC1 /* Products */,
+				8B9C280193444FF9A2935EFA /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +89,7 @@
 				5BE568441700FBEA00C2ACC1 /* UIKit.framework */,
 				5BE568461700FBEA00C2ACC1 /* Foundation.framework */,
 				5BE568481700FBEA00C2ACC1 /* CoreGraphics.framework */,
+				E7AB075558C54C5E916F1A0D /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,8 +100,12 @@
 				5BE568531700FBEA00C2ACC1 /* AppDelegate.h */,
 				5BE568541700FBEA00C2ACC1 /* AppDelegate.m */,
 				5BE5685C1700FBEA00C2ACC1 /* MainStoryboard.storyboard */,
-				5BE5685F1700FBEA00C2ACC1 /* ViewController.h */,
-				5BE568601700FBEA00C2ACC1 /* ViewController.m */,
+				5BE568671700FE0D00C2ACC1 /* MainViewController.h */,
+				5BE568681700FE0D00C2ACC1 /* MainViewController.m */,
+				5BE5686E1700FF7000C2ACC1 /* PushedViewController.h */,
+				5BE5686F1700FF7000C2ACC1 /* PushedViewController.m */,
+				5BE568701700FF7000C2ACC1 /* PushedViewController.xib */,
+				5BE5686A1700FEE300C2ACC1 /* Container */,
 				5BE5684B1700FBEA00C2ACC1 /* Supporting Files */,
 			);
 			path = BContextContainer;
@@ -107,6 +125,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5BE5686A1700FEE300C2ACC1 /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				5BE5686B1700FF0300C2ACC1 /* BCXContainerViewController.h */,
+				5BE5686C1700FF0300C2ACC1 /* BCXContainerViewController.m */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -117,6 +144,7 @@
 				5BE5683D1700FBEA00C2ACC1 /* Sources */,
 				5BE5683E1700FBEA00C2ACC1 /* Frameworks */,
 				5BE5683F1700FBEA00C2ACC1 /* Resources */,
+				9FAC0070EF3045E5A79BDAE4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -163,10 +191,28 @@
 				5BE568591700FBEA00C2ACC1 /* Default@2x.png in Resources */,
 				5BE5685B1700FBEA00C2ACC1 /* Default-568h@2x.png in Resources */,
 				5BE5685E1700FBEA00C2ACC1 /* MainStoryboard.storyboard in Resources */,
+				5BE568721700FF7000C2ACC1 /* PushedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9FAC0070EF3045E5A79BDAE4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BE5683D1700FBEA00C2ACC1 /* Sources */ = {
@@ -175,7 +221,9 @@
 			files = (
 				5BE568511700FBEA00C2ACC1 /* main.m in Sources */,
 				5BE568551700FBEA00C2ACC1 /* AppDelegate.m in Sources */,
-				5BE568611700FBEA00C2ACC1 /* ViewController.m in Sources */,
+				5BE568691700FE0D00C2ACC1 /* MainViewController.m in Sources */,
+				5BE5686D1700FF0300C2ACC1 /* BCXContainerViewController.m in Sources */,
+				5BE568711700FF7000C2ACC1 /* PushedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +309,7 @@
 		};
 		5BE568651700FBEA00C2ACC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9C280193444FF9A2935EFA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BContextContainer/BContextContainer-Prefix.pch";
@@ -272,6 +321,7 @@
 		};
 		5BE568661700FBEA00C2ACC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B9C280193444FF9A2935EFA /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BContextContainer/BContextContainer-Prefix.pch";
@@ -300,6 +350,7 @@
 				5BE568661700FBEA00C2ACC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
