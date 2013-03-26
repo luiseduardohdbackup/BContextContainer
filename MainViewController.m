@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import <SWRevealViewController/SWRevealViewController.h>
 #import "PushedViewController.h"
+#import "BCXContainerViewController.h"
 
 @interface MainViewController ()
 
@@ -25,8 +26,7 @@
 - (IBAction)pushViewController:(id)sender
 {
     PushedViewController *pushedVC = [[PushedViewController alloc] init];
-    
-    [self presentViewController:pushedVC animated:YES completion:nil];
+    [self.revealViewController.bContextContainer pushViewController:pushedVC];
 }
 
 @end

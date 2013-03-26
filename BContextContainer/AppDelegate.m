@@ -7,12 +7,22 @@
 //
 
 #import "AppDelegate.h"
+#import "BCXContainerViewController.h"
+#import <SWRevealViewController/SWRevealViewController.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        
+    UIStoryboard *gridStoryboard = [UIStoryboard storyboardWithName:@"Grid" bundle:nil];
+    SWRevealViewController *revealVC = [gridStoryboard instantiateInitialViewController];
+    
+    BCXContainerViewController *container = [[BCXContainerViewController alloc] initWithRootViewController:revealVC];
+    
+    self.window.rootViewController = container;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

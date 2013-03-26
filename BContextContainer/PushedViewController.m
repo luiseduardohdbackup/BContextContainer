@@ -7,6 +7,8 @@
 //
 
 #import "PushedViewController.h"
+#import "BCXContainerViewController.h"
+#import "PresentedViewController.h"
 
 @interface PushedViewController ()
 
@@ -16,7 +18,13 @@
 
 - (IBAction)popViewController:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.bContextContainer popViewController];
+}
+
+- (IBAction)presentViewController:(id)sender
+{
+    PresentedViewController *presentVC = [[PresentedViewController alloc] init];
+    [self.bContextContainer presentViewController:presentVC];
 }
 
 @end
