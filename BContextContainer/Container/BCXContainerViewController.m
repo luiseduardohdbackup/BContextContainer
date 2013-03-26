@@ -43,7 +43,7 @@
 {
     if (viewController) {
         UIViewController *topVC = [self topMostViewController];
-        
+        viewController.view.transform = CGAffineTransformIdentity;
         [self addController:viewController];
         viewController.view.frame = self.view.bounds;
         [self.view addSubview:viewController.view];
